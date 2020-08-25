@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "iconfinder_text_letter_t_42369.png",
+      "idiom" : "mac"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "template-rendering-intent" : "template"
+  }
+}
