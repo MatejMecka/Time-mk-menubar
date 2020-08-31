@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		764F51A524EBF90100A38A47 /* News-model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764F51A424EBF90100A38A47 /* News-model.swift */; };
+		76B1664724FBECCD00BE6076 /* OrderedDictionary in Frameworks */ = {isa = PBXBuildFile; productRef = 76B1664624FBECCD00BE6076 /* OrderedDictionary */; };
 		76C262C424EDC2CF009704EC /* SwiftyXMLParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C262C324EDC2CF009704EC /* SwiftyXMLParser.framework */; };
 		76C262C524EDC2CF009704EC /* SwiftyXMLParser.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 76C262C324EDC2CF009704EC /* SwiftyXMLParser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		76C262C824EE84BF009704EC /* SwiftSoup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C262C724EE84BF009704EC /* SwiftSoup.framework */; };
 		76C262C924EE84BF009704EC /* SwiftSoup.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 76C262C724EE84BF009704EC /* SwiftSoup.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		76C262CC24EE86AD009704EC /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 76C262CB24EE86AD009704EC /* URLImage */; };
 		76C262CD24EE89EE009704EC /* SwiftyXMLParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C262C324EDC2CF009704EC /* SwiftyXMLParser.framework */; };
-		76C262CF24F579FA009704EC /* onappear-alternative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C262CE24F579FA009704EC /* onappear-alternative.swift */; };
+		76C262CF24F579FA009704EC /* bindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C262CE24F579FA009704EC /* bindings.swift */; };
+		76F022B024F7F2F400201625 /* rss-feeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F022AF24F7F2F400201625 /* rss-feeds.swift */; };
 		A70B6234237AF87000A2BA73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70B6233237AF87000A2BA73 /* AppDelegate.swift */; };
 		A70B6236237AF87000A2BA73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70B6235237AF87000A2BA73 /* ContentView.swift */; };
 		A70B6238237AF87700A2BA73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A70B6237237AF87700A2BA73 /* Assets.xcassets */; };
@@ -44,7 +46,9 @@
 		764F51A424EBF90100A38A47 /* News-model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "News-model.swift"; sourceTree = "<group>"; };
 		76C262C324EDC2CF009704EC /* SwiftyXMLParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyXMLParser.framework; path = Carthage/Build/Mac/SwiftyXMLParser.framework; sourceTree = "<group>"; };
 		76C262C724EE84BF009704EC /* SwiftSoup.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftSoup.framework; path = Carthage/Build/Mac/SwiftSoup.framework; sourceTree = "<group>"; };
-		76C262CE24F579FA009704EC /* onappear-alternative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "onappear-alternative.swift"; sourceTree = "<group>"; };
+		76C262CE24F579FA009704EC /* bindings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bindings.swift; sourceTree = "<group>"; };
+		76F022AF24F7F2F400201625 /* rss-feeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "rss-feeds.swift"; sourceTree = "<group>"; };
+		76F022B324FA711300201625 /* SVGKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVGKit.framework; path = Carthage/Build/Mac/SVGKit.framework; sourceTree = "<group>"; };
 		A70B6230237AF87000A2BA73 /* Time-Mk-Menu-bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time-Mk-Menu-bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70B6233237AF87000A2BA73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A70B6235237AF87000A2BA73 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76C262C424EDC2CF009704EC /* SwiftyXMLParser.framework in Frameworks */,
+				76B1664724FBECCD00BE6076 /* OrderedDictionary in Frameworks */,
 				76C262CD24EE89EE009704EC /* SwiftyXMLParser.framework in Frameworks */,
 				76C262CC24EE86AD009704EC /* URLImage in Frameworks */,
 				76C262C824EE84BF009704EC /* SwiftSoup.framework in Frameworks */,
@@ -76,6 +81,7 @@
 		76C262C224EDC2CF009704EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				76F022B324FA711300201625 /* SVGKit.framework */,
 				76C262C724EE84BF009704EC /* SwiftSoup.framework */,
 				76C262C324EDC2CF009704EC /* SwiftyXMLParser.framework */,
 			);
@@ -129,7 +135,8 @@
 				A70B624B237B003900A2BA73 /* StatusBarController.swift */,
 				A70B6251237B078200A2BA73 /* EventMonitor.swift */,
 				764F51A424EBF90100A38A47 /* News-model.swift */,
-				76C262CE24F579FA009704EC /* onappear-alternative.swift */,
+				76C262CE24F579FA009704EC /* bindings.swift */,
+				76F022AF24F7F2F400201625 /* rss-feeds.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -161,8 +168,9 @@
 			name = "Time-Mk-Menu-bar";
 			packageProductDependencies = (
 				76C262CB24EE86AD009704EC /* URLImage */,
+				76B1664624FBECCD00BE6076 /* OrderedDictionary */,
 			);
-			productName = Time-Mk-Menu-bar;
+			productName = "Time-Mk-Menu-bar";
 			productReference = A70B6230237AF87000A2BA73 /* Time-Mk-Menu-bar.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -174,7 +182,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1160;
-				ORGANIZATIONNAME = "Golden Chopper";
+				ORGANIZATIONNAME = "Matej Plavevski";
 				TargetAttributes = {
 					A70B622F237AF87000A2BA73 = {
 						CreatedOnToolsVersion = 11.1;
@@ -192,6 +200,7 @@
 			mainGroup = A70B6227237AF87000A2BA73;
 			packageReferences = (
 				76C262CA24EE86AD009704EC /* XCRemoteSwiftPackageReference "url-image" */,
+				76B1664524FBECCD00BE6076 /* XCRemoteSwiftPackageReference "OrderedDictionary" */,
 			);
 			productRefGroup = A70B6231237AF87000A2BA73 /* Products */;
 			projectDirPath = "";
@@ -226,7 +235,8 @@
 				A70B6234237AF87000A2BA73 /* AppDelegate.swift in Sources */,
 				764F51A524EBF90100A38A47 /* News-model.swift in Sources */,
 				A70B6250237B022700A2BA73 /* MainViewController.swift in Sources */,
-				76C262CF24F579FA009704EC /* onappear-alternative.swift in Sources */,
+				76F022B024F7F2F400201625 /* rss-feeds.swift in Sources */,
+				76C262CF24F579FA009704EC /* bindings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +389,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matejmecka.time-mk-menuapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -407,6 +418,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matejmecka.time-mk-menuapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -437,6 +449,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		76B1664524FBECCD00BE6076 /* XCRemoteSwiftPackageReference "OrderedDictionary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lukaskubanek/OrderedDictionary.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.1;
+			};
+		};
 		76C262CA24EE86AD009704EC /* XCRemoteSwiftPackageReference "url-image" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
@@ -448,6 +468,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		76B1664624FBECCD00BE6076 /* OrderedDictionary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 76B1664524FBECCD00BE6076 /* XCRemoteSwiftPackageReference "OrderedDictionary" */;
+			productName = OrderedDictionary;
+		};
 		76C262CB24EE86AD009704EC /* URLImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 76C262CA24EE86AD009704EC /* XCRemoteSwiftPackageReference "url-image" */;

@@ -3,7 +3,7 @@
 //  Time-Mk-Menu-bar
 //
 //  Created by Matej Plavevski on 8/18/20.
-//  Copyright © 2020 Golden Chopper. All rights reserved.
+//  Copyright © 2020 Matej Plavevski. All rights reserved.
 //
 
 import Foundation
@@ -16,6 +16,6 @@ struct Response: Codable {
 struct NewsPiece {
     var title: String
     var description: String
-    var image: String
+    //var image: String
     var article_url: URL
 }

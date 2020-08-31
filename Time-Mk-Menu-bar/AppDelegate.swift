@@ -3,7 +3,7 @@
 //  Time-Mk-Menu-bar
 //
 //  Created by Matej Plavevski on 8/25/20.
-//  Copyright © 2020 Golden Chopper. All rights reserved.
+//  Copyright © 2020 Matej Plavevski. All rights reserved.
 //
 
 import Cocoa

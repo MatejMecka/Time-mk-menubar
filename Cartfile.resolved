@@ -1,2 +1,4 @@
+github "CocoaLumberjack/CocoaLumberjack" "3.6.2"
+github "SVGKit/SVGKit" "2.1.0"
 github "scinfu/SwiftSoup" "2.3.2"
 github "yahoojapan/SwiftyXMLParser" "5.2.0"
