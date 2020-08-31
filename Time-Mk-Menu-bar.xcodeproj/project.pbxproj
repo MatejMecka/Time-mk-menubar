@@ -48,7 +48,6 @@
 		76C262C724EE84BF009704EC /* SwiftSoup.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftSoup.framework; path = Carthage/Build/Mac/SwiftSoup.framework; sourceTree = "<group>"; };
 		76C262CE24F579FA009704EC /* bindings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bindings.swift; sourceTree = "<group>"; };
 		76F022AF24F7F2F400201625 /* rss-feeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "rss-feeds.swift"; sourceTree = "<group>"; };
-		76F022B324FA711300201625 /* SVGKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVGKit.framework; path = Carthage/Build/Mac/SVGKit.framework; sourceTree = "<group>"; };
 		A70B6230237AF87000A2BA73 /* Time-Mk-Menu-bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time-Mk-Menu-bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70B6233237AF87000A2BA73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A70B6235237AF87000A2BA73 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,7 +80,6 @@
 		76C262C224EDC2CF009704EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				76F022B324FA711300201625 /* SVGKit.framework */,
 				76C262C724EE84BF009704EC /* SwiftSoup.framework */,
 				76C262C324EDC2CF009704EC /* SwiftyXMLParser.framework */,
 			);
